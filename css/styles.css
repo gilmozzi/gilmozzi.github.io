@@ -563,18 +563,27 @@ a.site-logo img {
   height: 80%;
   position: relative;
   transition: all .5s ease-in-out;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.445);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.562);
 }
 
-.card-popup .close {
-  position: absolute;
+.close {
+  color: white;
+  margin: 5%;
+  background-color: rgba(0, 0, 0, 0.438);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.171);
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.card-popup .close{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
   top: 20px;
   right: 30px;
   transition: all 200ms;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: rgb(143, 143, 143);
 }
 
 .card-popup .close:hover {
@@ -710,15 +719,16 @@ a.site-logo img {
 }
 
 .popup .close {
-  position: absolute;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
   top: 20px;
   right: 30px;
   transition: all 200ms;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: rgb(143, 143, 143);
 }
+
 .popup .close:hover {
   color: #000000;
 }
@@ -1349,6 +1359,10 @@ a.site-logo img {
 
   .card-popup {
     width: 90%;
+  }
+
+  .close {
+    margin-left: 80%;
   }
   
   .about-img {
