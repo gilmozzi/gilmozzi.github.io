@@ -1,0 +1,24 @@
+{
+    "liveServer.settings.port": 5501
+}
+
+new Scene({
+    ".container span": Scene.typing({
+      text: "Make a typing effect with Scene.js.",
+      duration: 7,
+      delay: 1,
+    }),
+    ".cursor": {
+      0: { opacity: 0 },
+      0.5: { opacity: 0 },
+      "0.5>": { opacity: 1 },
+      1: { opacity: 1 },
+      options: {
+        iterationCount: 8,
+      }
+    },
+  }, {
+    iterationCount: "infinite",
+    direction: "alternate",
+    selector: true,
+  }).play();
