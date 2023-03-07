@@ -12,6 +12,21 @@
     <title>Charles Kang</title>
     <link rel="icon" href="img/tab_logo.png" alt="tab_logo">
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--GSAP & ScrollToPlugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js" integrity="sha512-tQFq+nb/TSS648SDzWbSj0A67t4I1PFzR0U6Oi/yEYFyUbAIwg74SOCbr7t2X1Rn+iln7sYwfh8y+z7p0gddOw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+  
+    <!--ScrollMagic cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+
     <!-- resets browser defaults -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <!-- custom styles -->
@@ -24,7 +39,9 @@
 
     <!--typography: Righteous from Google fonts-->
     <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
-</head>
+    
+    <script defer src="./js/main.js"></script>
+  </head>
 
 <body>
   <!-- Navigation-->
@@ -57,22 +74,23 @@
   <section class="me-container">
 
     <!-- left side -->
-    <div class="me">
+    <div class="me scroll-spy">
       <div class="me-content">
-        <h1 class="me-title">Hi, This is <br><span class="name">Charles</span></h1>
-        <h3 class="hashtag">#INFORMATICS #CODER #DESIGNER <br>#SIMPLE #CREATIVE #PROBLEMSOLVING</h3>
+        <h1 class="me-title back-to-position to-right delay-0">Hi, This is <br><span class="name">Charles</span></h1>
+        <h3 class="hashtag back-to-position to-right delay-2">#INFORMATICS #CODER #DESIGNER <br>#SIMPLE #CREATIVE #PROBLEMSOLVING</h3>
+        
         <a href="#about-section">
-          <div class="about-btn">
-          <p class="btn-text">ABOUT ME</p>
-          <div class="about-btn2">
-            <p class="btn-text2">>></p>
-          </div>
+          <div class="about-btn back-to-position to-right delay-3">
+            <p class="btn-text">ABOUT ME</p>
+            <div class="about-btn2">
+              <p class="btn-text2">>></p>
+            </div>
           </div>
         </a>
       </div>
 
       <!-- right side -->
-      <div class="me-img">
+      <div class="me-img back-to-position to-left delay-1">
         <img src="img/memyself.png">
       </div>
 
@@ -83,7 +101,7 @@
 <!-- move to the cards -->
 <div class="arrow-btn">
   <a href="#content-section">
-      <img src="img/arrow.png">
+      <img src="img/arrow.png" class="floating1" />
   </a>
 </div>
     
@@ -247,13 +265,13 @@
                       <h4><i>"A journey of thousand miles begins with a single step."</i></h4>
                     </div>
                     <span class="about-content">
-                    I am a Senior at Indiana University Bloomington majoring in Informatics cognates Graphic Design. The purpose of why I chose fine arts cognate even though there are various fields in our major because I am always eager to make people are attracted to my creative design.
+                      Born in Ames, Iowa and raised in South Korea, I've always had a passion for creativity and design. As a freshman in high school, I began filling my sketchbook with drawings and paintings, and knew that my journey towards a career in the arts had begun. While I initially intended to transfer to an art school, I eventually discovered my interest in Informatics - the science of data, information, and knowledge - and decided to pursue a major in that field with a cognate in Graphic Design. Currently, I'm a senior at Indiana University Bloomington.
                     <br>
                     <br>
-                    I was born in Ames, Iowa, and moved to South Korea at the age of three. After spending my life there, I moved to Bloomington, IN, freshman year of high school in 2013 and I started to fill out the sketchbook with my drawings and paintings everything. I highly admit that filling out the sketchbook is the first step of my journey of thousand miles. Therefore, I was going to transfer art school in the United States until I learn how to code. I began to code when I was a freshmen year in a college since I was attentive about Informatics which is the science of how to use data, information, and knowledge to improve any other fields.
+                    As I progressed through college, I found that a combination of web development and graphic design offered the best path forward for me. I believe that these skills, combined with my passion for creativity, will allow me to make a meaningful impact in my future career. One quote that has always resonated with me is by Pablo Picasso: <i>"Everything you can imagine is real."</i> I take this to heart, and strive to be as creative and imaginative as possible in all of my work.
                     <br>
                     <br>
-                    I believe that a mixture of web develops and graphic design will lead me in the best way that I strongly want to do in the future. I have sympathy with the quote from Pablo Picasso, <i>“Everything you can imagine is real” </i>. Inspired by Pablo Picasso, the step of my journey is <i>“Be more creative”</i>.<br>
+                    My journey towards a career in design has been an ongoing process, and while it may have started with a single step, it has been made up of many steps along the way. Through hard work, dedication, and a commitment to creativity, I am confident that I can achieve my goals and make a positive impact in the world of design.<br>
                     </span>
                   </p>
                   
@@ -366,9 +384,9 @@
               </div>
               <br>
               <div class="about-subtitle"><h3>Contact Info</h3>
-                <p>Personal: bourgeois1122@gmail.com</p>
+                <p>Personal: cgmokang@gmail.com</p>
                 <p>School: cgkang@iu.edu</p>
-                <p>Phone: 812) 351-0448</p>
+                <p>Phone: 812) 671-4019</p>
                 <p>Address: 1623 S Andrew Cir <br> Bloomington, IN 47401 </p>
               </div>
               <br>
@@ -378,8 +396,10 @@
                 <p>Pixel Art</p>
                 <p>Cooking</p>
                 <p>Illustration</p>
+                <p>Weight Training</p>
                 <p>Extreme Sports</p>
-                <p>Netflix</p>
+                <p>Soccer</p>
+                <p>Baseball</p>
                 </div>
               </div>
             </div>
@@ -406,27 +426,47 @@
               </div>
                 <p><i>Web Designer Intern</i></p>
                 <p>
-                  &#8269;&ensp;&ensp;Designed all pages of the platform website to attract users who wish to realize their global aspirations in business and in life.
+                  &#8269;&ensp;&ensp;Designed and maintained design standards for client websites, ensuring consistent branding and a positive user experience
                   <br>
-                  &#8269;&ensp;&ensp;Created the icons of each feature and function to establish the amicable interaction and to provide usability of the platform.
+                  &#8269;&ensp;&ensp;Created the icons of each feature and function to establish amicable interaction and to provide usability of the platform
+                  <br>
+                  &#8269;&ensp;&ensp;Accomplished working closely with managers in the project team and website developers to ensure timely delivery of projects
                   <br>
                 </p>
         
                 <h3 class="resume-subtitle">Project</h3>
                 <div class="about-name-date">
-                  <h4 class ="about-name">WIRED, Bloomington IN</h4><p class="about-date">August 2020 &#45; Present</p>
+                  <h4 class ="about-name">WIRED, Bloomington IN</h4><p class="about-date">August 2020 &#45; May 2021</p>
                 </div>
         
                 <p><i>Capstone Project intern</i></p>
         
                 <p>
-                  &#8269;&ensp;&ensp;Develop using HTML, CSS, JavaScript the Stadium web-based to provide the functions of the selected stadium.
+                  &#8269;&ensp;&ensp;Developed the Stadium web-based platform to provide the functions using HTML, CSS, JavaScript, MySQL, and PHP
                   <br>
-                  &#8269;&ensp;&ensp;Design simple icons of features and an understandable hierarchy of each page to access users comfortably.
+                  &#8269;&ensp;&ensp;Designed simple icons of features and an intuitive hierarchy of each page to ensure consistent users comfortably
+                  <br>
+                  &#8269;&ensp;&ensp;Presented the project to faculty and industry professionals, showcasing our team's technical and communication skills
                   <br>
                 </p>
         
                 <h3 class="resume-subtitle">Leaderships and Activities</h3>
+                <div class="about-name-date">
+                  <h4 class ="about-name">Korean Organization of Reforming Entrepreneurs Club</h4><p class="about-date">August 2018 &#45; Present</p>
+                </div>
+        
+                <p><i>Director of Design Department / Executive</i></p>
+        
+                <p>
+                  &#8269;&ensp;&ensp;Constructed a website for a club using HTML, CSS, and JavaScript with a user-friendly design and operated with a team
+                  <br>
+                  &#8269;&ensp;&ensp;Designed pages in BLMANG which is a magazine that publishes every month starting from November 2019 to March 2020 and has achieved around 120 subscribers
+                  <br>
+                  &#8269;&ensp;&ensp;Engaged in building a business model and designing invitations to connect a local international market with approximately 7,000 international students at Indiana University through an online platform and delivery service
+                  <br>
+                  <br>
+                </p>
+
                 <div class="about-name-date">
                   <h4 class ="about-name">Indiana Kosiers Football Club, Bloomington, IN</h4><p class="about-date">August 2017 &#45; Present</p>
                 </div>
@@ -434,39 +474,52 @@
                 <p><i>President / 1st Team Goalkeeper</i></p>
         
                 <p>
-                  &#8269;&ensp;&ensp;Participated in Kosiers tournament, Ohio State University tournament, and University of Illinois Urbana-Champaign tournament as a starting roster and placed 1st among 15 colleges for the 2nd time of the history.
+                  &#8269;&ensp;&ensp;Led a team of officers and members in managing and organizing events for a student-run soccer club with over 40 players
                   <br>
-                  &#8269;&ensp;&ensp;Planned events for Kosiers Alumni to raise funding around $1,000 for the club every year.
+                  &#8269;&ensp;&ensp;Participated in Kosiers tournament, Ohio State University tournament, and University of Illinois Urbana-Champaign tournament as a starting roster and placed 1st among 15 colleges for the 2nd time in history
+                  <br>
+                  &#8269;&ensp;&ensp;Planned and hosted successful events for Kosiers Alumni to raise funding around $1,000 for the club every year
+                  <br>
+                  &#8269;&ensp;&ensp;Made a reservation soccer field twice a week and led teammates with other board members to operate the team
                   <br>
                   <br>
                 </p>
+
                 <div class="about-name-date">
                   <h4 class ="about-name">Korean Student Association, Bloomington, IN</h4><p class="about-date">August 2017 &#45; December 2018</p>
                 </div>
         
-                <p><i>Member of Planning Department</i></p>
+                <p><i>Planning Department</i></p>
         
                 <p>
-                  &#8269;&ensp;&ensp;Direct weekly meeting of the organization of 24 members to plan events for the Korean society on IU campus.
+                  &#8269;&ensp;&ensp;Directed weekly meetings of the organization of 24 members to plan events for the Korean society on the IU campus
                   <br>
-                  &#8269;&ensp;&ensp;Promoted every poster and good which are related to the Korean historical events that our association opened.
+                  &#8269;&ensp;&ensp;Promoted every poster and good related to the Korean historical events that our association opened
+                  <br>
+                  &#8269;&ensp;&ensp;Represented the club in meetings with other student organizations and university staff, advocating for the club's interests and need
                   <br>
                   <br>
                 </p>
+
                 <div class="about-name-date">
-                  <h4 class ="about-name">Korean Organization of Reforming Entrepreneurs Club , Bloomington, IN</h4><p class="about-date">August 2018 &#45; Present</p>
+                  <h4 class ="about-name">Republic of Korea Army, Gangwon, South Korea</h4><p class="about-date">May 2021 &#45; November 2022</p>
                 </div>
         
-                <p><i>Director of Design Department</i></p>
+                <p><i>Squad Leader / Large Vehicle Driver / Mechanic</i></p>
         
                 <p>
-                  &#8269;&ensp;&ensp;Constructed a website for a club using HTML and CSS with user-friendly design and operated with a team.
+                  &#8269;&ensp;&ensp;Led a squad of 12 soldiers in day-to-day operations, ensuring adherence to military policies and procedures
                   <br>
-                  &#8269;&ensp;&ensp;Designed pages in BLMANG which is a magazine that comes out every month starting from November 2019 to March 2020 and has achieved around 120 subscribers.
+                  &#8269;&ensp;&ensp;Mentored and advised squad members on personal and professional matters, promoting teamwork, and overall well-being
                   <br>
-                  &#8269;&ensp;&ensp;Engaged in building a business model and designing invitation in connecting a local international market with approximately 7,000 international students at Indiana University through an online platform and delivery service.
+                  &#8269;&ensp;&ensp;Coordinated with other squad leaders and superiors to plan and execute successful missions, resulting in zero casualties
+                  <br>
+                  &#8269;&ensp;&ensp;Achieved being qualified to drive all kinds of vehicles and mainly carried out personnel transport operations with a large bus
+                  <br>
+                  &#8269;&ensp;&ensp;Received forklift certification and large vehicle license, demonstrating proficiency in the safe operation of heavy equipment
                   <br>
                 </p>
+
             </div>
           </div> 
         </div>
@@ -485,11 +538,11 @@
 
       </div>
       <div class="footer-left">
-        <p>Charles Gilmo Kang &copy; 2022</p>
+        <p>Charles Gilmo Kang &copy; 2023</p>
         </p>
         <br>
         <br>
-        <p>cgkang@iu.edu	&ensp; 812)351-0448 	&ensp; Bloomington, IN</p>
+        <p>cgmokang@iu.edu	&ensp; 812) 671-4019 	&ensp; Bloomington, IN</p>
 			</div>
 
     </footer>
